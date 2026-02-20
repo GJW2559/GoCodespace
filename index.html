@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoCodeSpaces - 专业云端开发空间</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        body{
+            background:#f8fafc;
+            color:#1e293b;
+        }
+        /* 导航 */
+        nav{
+            background:#0f172a;
+            color:white;
+            padding:1rem 5%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:fixed;
+            width:100%;
+            top:0;
+            z-index:999;
+        }
+        .logo{
+            font-size:1.5rem;
+            font-weight:bold;
+            color:#22d3ee;
+        }
+        .menu a{
+            color:white;
+            text-decoration:none;
+            margin-left:2rem;
+            font-size:1rem;
+            transition:0.2s;
+        }
+        .menu a:hover{
+            color:#22d3ee;
+        }
+        /* 首屏 */
+        .hero{
+            height:100vh;
+            background:linear-gradient(135deg, #0f172a, #1e293b);
+            color:white;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:0 5%;
+            margin-top:60px;
+        }
+        .hero h1{
+            font-size:3.2rem;
+            margin-bottom:1rem;
+            color:#ffffff;
+        }
+        .hero h1 span{
+            color:#22d3ee;
+        }
+        .hero p{
+            font-size:1.2rem;
+            max-width:800px;
+            margin-bottom:2.5rem;
+            line-height:1.7;
+            opacity:0.9;
+        }
+        .btn{
+            padding:14px 36px;
+            background:#22d3ee;
+            color:#0f172a;
+            border:none;
+            border-radius:8px;
+            font-size:1rem;
+            font-weight:600;
+            cursor:pointer;
+            text-decoration:none;
+            transition:0.2s;
+        }
+        .btn:hover{
+            background:#06b6d4;
+        }
+        /* 产品介绍 */
+        .product{
+            padding:8rem 5%;
+            background:#ffffff;
+            text-align:center;
+        }
+        .product h2{
+            font-size:2.4rem;
+            margin-bottom:3.5rem;
+            color:#0f172a;
+        }
+        .card-group{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:2.5rem;
+        }
+        .card{
+            width:320px;
+            background:#f8fafc;
+            padding:2.5rem 2rem;
+            border-radius:12px;
+            box-shadow:0 4px 20px rgba(0,0,0,0.05);
+            transition:0.3s;
+        }
+        .card:hover{
+            transform:translateY(-5px);
+        }
+        .card h3{
+            font-size:1.4rem;
+            margin-bottom:1rem;
+            color:#0f172a;
+        }
+        .card p{
+            color:#475569;
+            line-height:1.6;
+        }
+        /* 联系我们 */
+        .contact{
+            padding:8rem 5%;
+            background:#f1f5f9;
+            text-align:center;
+        }
+        .contact h2{
+            font-size:2.4rem;
+            margin-bottom:2rem;
+            color:#0f172a;
+        }
+        .contact-box{
+            font-size:1.2rem;
+            color:#334155;
+        }
+        .contact-box a{
+            color:#0891b2;
+            font-weight:600;
+            text-decoration:none;
+        }
+        /* 底部 */
+        footer{
+            background:#0f172a;
+            color:white;
+            text-align:center;
+            padding:2.5rem 5%;
+        }
+        footer p{
+            opacity:0.7;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航 -->
+<nav>
+    <div class="logo">GoCodeSpaces</div>
+    <div class="menu">
+        <a href="#home">首页</a>
+        <a href="#product">产品</a>
+        <a href="#contact">联系我们</a>
+    </div>
+</nav>
+
+<!-- 首页首屏 -->
+<section class="hero" id="home">
+    <h1><span>Go</span>CodeSpaces</h1>
+    <p>云端开发环境 · 极速启动 · 团队协作 · 随时随地编写代码，为开发者与企业提供高效稳定的云端工作空间。</p>
+    <a href="#contact" class="btn">立即咨询</a>
+</section>
+
+<!-- 产品模块 -->
+<section class="product" id="product">
+    <h2>核心产品能力</h2>
+    <div class="card-group">
+        <div class="card">
+            <h3>云端 IDE</h3>
+            <p>浏览器一键打开开发环境，支持 Go / Python / Node / Java 等主流语言，无需本地配置。</p>
+        </div>
+        <div class="card">
+            <h3>团队协作空间</h3>
+            <p>多人实时共享项目、代码与终端，提升团队开发与交付效率，适合远程办公。</p>
+        </div>
+        <div class="card">
+            <h3>企业级部署</h3>
+            <p>高可用、安全隔离、自动扩缩容，支持私有化部署与定制化开发服务。</p>
+        </div>
+    </div>
+</section>
+
+<!-- 联系我们 -->
+<section class="contact" id="contact">
+    <h2>联系我们</h2>
+    <div class="contact-box">
+        <p>商务合作 & 产品咨询：</p>
+        <p><a href="mailto:gujingwen2559@outlook.com">gujingwen2559@outlook.com</a></p>
+    </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+    <p>© 2026 GoCodeSpaces. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
